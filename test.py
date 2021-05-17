@@ -2,7 +2,6 @@
 import requests
 import datetime
 import json
-import pandas as pd
 from fake_useragent import UserAgent
 import pyttsx3
 import time
