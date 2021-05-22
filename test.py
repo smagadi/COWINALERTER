@@ -26,7 +26,7 @@ def vaccineChecker():
            
             for center in resp_json["centers"]:
                 for session in center["sessions"]:
-                    if session["min_age_limit"] == 18 and session["available_capacity"] >0 and session["vaccine"]!="COVISHIELD":
+                    if session["min_age_limit"] == 18 and session["available_capacity_dose1"] >0 :
                         flag = 1
                         print("\t", session["date"])
                         print("\t", session["min_age_limit"])
@@ -49,7 +49,7 @@ def vaccineChecker():
 def main():
     while True:
         vaccineChecker()
-        time.sleep(120)
+        time.sleep(30)
         
 
 
